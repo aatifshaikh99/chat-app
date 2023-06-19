@@ -83,7 +83,7 @@ const Input = () => {
         value={text}
       />
       <div className="send">
-        <img src={Attach} alt="" />
+        <img src={Attach} alt="attach" className="mobile-hidden"/>
         <input
           type="file"
           style={{ display: "none" }}
@@ -91,7 +91,7 @@ const Input = () => {
           onChange={(e) => setImg(e.target.files[0])}
         />
         <label htmlFor="file">
-          <img src={Img} alt="" />
+          <img src={Img} alt="file" />
         </label>
         <button onClick={handleSend}>Send</button>
       </div>
