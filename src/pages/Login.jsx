@@ -30,7 +30,7 @@ const Login = () => {
 
         <form onSubmit={handleSubmit}>
           <input type="email" placeholder="email" required />
-          <input type="password" placeholder="password" required />
+          <input type="password" placeholder="password" autoComplete="off" required />
           <button>Sign in</button>
           {err && <span>Something went wrong</span>}
         </form>

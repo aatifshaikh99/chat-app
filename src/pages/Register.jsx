@@ -71,7 +71,7 @@ const Register = () => {
         <form onSubmit={handleSubmit}>
           <input type="text" placeholder="Display Name" required />
           <input type="email" placeholder="Email" required />
-          <input type="password" placeholder="Password" required />
+          <input type="password" placeholder="Password" autoComplete="off" required />
           <input style={{ display: "none" }} type="file" id="file" required />
           <label htmlFor="file">
             <img src={Add} alt="Add Profile" />
